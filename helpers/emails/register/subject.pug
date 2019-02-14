@@ -1,0 +1,14 @@
+email
+.send({
+    template: 'signup_consumer',
+    message: {
+        to: user.email
+    },
+    locals: {
+        name: 'exampleuser',
+        sitelink: 'example.com',
+    }
+})
+.then(console.log)
+.catch(console.error);
+//console.log(email.getTemplatePath());
