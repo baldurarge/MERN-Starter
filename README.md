@@ -20,7 +20,7 @@ in the root directory run `cd config && touch keys.js`
 Then add this code to the file
 `module.exports = { mongoURI: "mongodb+srv://<username>:<password>@cluster0-uqbre.mongodb.net/test?retryWrites=true" secretOrKey: "secret"};`
 
-Replacethe `<username>` and `<password>` with the once you created at [Mongodb](https://mongodb.net)
+Replacethe `<username>` and `<password>` with the once you created at [Mongodb](https://www.mongodb.com)
 
 ## Start the server
 
