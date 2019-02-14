@@ -6,11 +6,11 @@ You need to install dependencies:
 
 #### Server
 
-in the root directory, run npm install.
+in the root directory, run `npm install`.
 
 #### Server
 
-in the /client directory, run npm install.
+in the /client directory, run `npm install`.
 
 ## Start the server
 
