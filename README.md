@@ -14,6 +14,14 @@ in the root directory, run `npm install`.
 
 in the /client directory, run `npm install`.
 
+You also need to add the mongodb connection.
+in the root directory run `cd config && touch keys.js`
+
+Then add this code to the file
+`module.exports = { mongoURI: "mongodb+srv://<username>:<password>@cluster0-uqbre.mongodb.net/test?retryWrites=true" secretOrKey: "secret"};`
+
+Replacethe `<username>` and `<password>` with the once you created at [Mongodb](https://mongodb.net)
+
 ## Start the server
 
 In the project root directory, you can run:
