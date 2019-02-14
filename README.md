@@ -1,5 +1,7 @@
 This is a starter package for a [Mongodb](https://www.mongodb.com), [Express](https://expressjs.com), [React](https://reactjs.org), [Node.js](https://nodejs.org/en/)
 
+This project is a simple, Register/login/logout user, With simple validation. The React application is built with Redux, in order to have the user data available, throughout the application.
+
 ## Before starting
 
 You need to install dependencies:
