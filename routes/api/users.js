@@ -3,18 +3,11 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
-const path = require('path');
-//Load the email provider
-const Email = require('email-templates');
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
-
-
-
-
 
 // @route POST api/users/register
 // @desc Register user
@@ -48,32 +41,6 @@ router.post("/register", (req, res) => {
               .catch(err => console.log(err));
           });
         });
-
-
-          // //Email message created
-          // const email = new Email({
-          //   message: {
-          //     from: 'hello@ultramegateam.com'
-          //   },
-          //   // uncomment below to send emails in development/test env:
-          //   send: true,
-          //   transport: {
-          //     jsonTransport: true
-          //   }
-          // });
-          
-          // email
-          //   .send({
-          //     template: 'mars',
-          //     message: {
-          //       to: "baldur@bigsheepstudio.dk"
-          //     },
-          //     locals: {
-          //       name: "Baldur"
-          //     }
-          //   })
-          //   .then(console.log)
-          //   .catch(console.error);
 
     });
 });
